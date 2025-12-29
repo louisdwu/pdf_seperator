@@ -160,7 +160,7 @@ class SplitterApp:
             # 自动设置输出目录为 PDF 所在目录下的同名文件夹
             pdf_dir = os.path.dirname(filepath)
             pdf_name = os.path.splitext(os.path.basename(filepath))[0]
-            default_output = os.path.join(pdf_dir, f"{pdf_name}_分割")
+            default_output = os.path.join(pdf_dir, f"{pdf_name}_分章节")
             self.output_path.set(default_output)
             
             # 启用分析按钮
